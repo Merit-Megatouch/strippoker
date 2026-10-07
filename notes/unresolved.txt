@@ -1,0 +1,18 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+RankFunc | strippoker.so
+Debug_Flag_Set(char const*, char const*) | strippoker.so
+Delay_PE(unsigned long) | strippoker.so
+PlayWave(char*, unsigned short, int, int, int, bool) | strippoker.so
+QueFlush(bool) | strippoker.so
+Translator::nTranslate(char*, unsigned int, char const*) | strippoker.so
+VideoClass::ShowVBRegionTrans(int, int, int, int, int, int) | strippoker.so
+Bitmap::CopyFromVB(int, int, int) | strippoker.so
+Bitmap::ConvertSmack(unsigned char) | strippoker.so
+Bitmap::CreateColoredTextBoxTTF(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | strippoker.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | strippoker.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | strippoker.so
+exists | strippoker.so
+unload_datafile | strippoker.so
